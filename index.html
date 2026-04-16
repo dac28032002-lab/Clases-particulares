@@ -49,12 +49,17 @@
     <section id="contacto" class="contact">
         <h2>Contacto</h2>
         <p>¿Necesitás ayuda con un examen o guía de ejercicios? Mandame un mensaje.</p>
-        <form id="contact-form">
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu correo" required>
-            <textarea placeholder="¿En qué materia necesitás ayuda?" required></textarea>
-            <button type="submit" class="btn">Enviar Mensaje</button>
-        </form>
+        <form action="https://formsubmit.co/tu-correo@gmail.com" method="POST" id="contact-form">
+    <input type="text" name="nombre" placeholder="Tu nombre" required>
+    <input type="email" name="email" placeholder="Tu correo" required>
+    <textarea name="mensaje" placeholder="¿En qué materia necesitás ayuda?" required></textarea>
+    
+    <input type="hidden" name="_next" value="https://tu-usuario.github.io/tu-repositorio/">
+    <input type="hidden" name="_subject" value="Nueva consulta de clases particulares!">
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit" class="btn">Enviar Mensaje</button>
+</form>
     </section>
 
     <footer>
